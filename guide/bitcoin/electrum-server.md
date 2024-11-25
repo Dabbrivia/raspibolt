@@ -336,13 +336,13 @@ Make sure to check the [release notes](https://github.com/romanz/electrs/blob/ma
   
   # Set the VERSION variable as number from latest release tag and verify developer signature
   $ VERSION="0.9.14"
-  $ git verify-tag v$VERSION
+  $ git verify-tag $VERSION
   > gpg: Good signature from "Roman Zeyde <me@romanzey.de>" [unknown]
   > [...]
 
   # Check out the release
   # Should you encounter an error about files that would be overwritten use the -f argument to force the checkout
-  $ git checkout v$VERSION
+  $ git checkout $VERSION
 
   # Compile the source code
   $ cargo clean
